@@ -31,7 +31,7 @@ http://localhost:3000
 NEXT_PUBLIC_DISCORD_INVITE_URL=https://discord.gg/qfJnk3VJyf
 ```
 
-이 값은 Live MR Manager 문의 페이지에만 씁니다. Cheese Stick Dock 문의는 해당 GitHub Issues입니다.
+Autumn Tools 전 제품이 함께 쓰는 Discord 초대 링크입니다. 홈, 각 제품 푸터, 문의 페이지에 표시됩니다. 버그 신고는 제품별 GitHub Issues로 받습니다.
 
 ## 라이선스
 

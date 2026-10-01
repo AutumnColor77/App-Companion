@@ -24,6 +24,7 @@ function productOf(path: string) {
 export function SiteFooter() {
   const path = usePathname() || "/";
   const product = productOf(path);
+  const discordHref = DISCORD_INVITE_URL || QA_URL;
 
   if (product === "dock") {
     return (
@@ -37,6 +38,10 @@ export function SiteFooter() {
           <Link href="/cheese-stick/guide">사용 방법</Link>
           {" · "}
           <Link href="/cheese-stick/faq">도움말</Link>
+          {" · "}
+          <a href={discordHref} target="_blank" rel="noopener noreferrer">
+            Autumn Tools Discord
+          </a>
           {" · "}
           <a href={DOCK_GITHUB_ISSUES_URL} target="_blank" rel="noopener noreferrer">
             GitHub Issues
@@ -66,6 +71,10 @@ export function SiteFooter() {
           {" · "}
           <Link href="/cheese-stick">Cheese Stick Dock</Link>
           {" · "}
+          <a href={discordHref} target="_blank" rel="noopener noreferrer">
+            Autumn Tools Discord
+          </a>
+          {" · "}
           <Link href="/privacy">Live MR Manager 개인정보 처리방침</Link>
           {" · "}
           <Link href="/cheese-stick/privacy">Cheese Stick Dock 개인정보 처리방침</Link>
@@ -73,8 +82,6 @@ export function SiteFooter() {
       </footer>
     );
   }
-
-  const discordHref = DISCORD_INVITE_URL || QA_URL;
 
   return (
     <footer className="site-footer">
@@ -89,7 +96,7 @@ export function SiteFooter() {
         <Link href="/qa">문의</Link>
         {" · "}
         <a href={discordHref} target="_blank" rel="noopener noreferrer">
-          Discord
+          Autumn Tools Discord
         </a>
         {" · "}
         <Link href="/download">다운로드</Link>

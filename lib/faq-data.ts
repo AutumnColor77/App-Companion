@@ -95,7 +95,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: "문의",
     question: "문의는 어디로 하면 되나요?",
     answer:
-      "설치·사용법 질문은 Discord(https://discord.gg/qfJnk3VJyf) 또는 문의 허브(lmrm.vercel.app/qa)를 이용해 주세요. 재현 가능한 버그는 GitHub Issues 버그 신고 템플릿으로, 기능 제안은 기능 제안 템플릿으로 등록해 주세요. 토큰·비밀번호·전체 로그는 올리지 마세요.",
+      "설치·사용법 질문은 Autumn Tools Discord(https://discord.gg/qfJnk3VJyf) 또는 문의 허브(lmrm.vercel.app/qa)를 이용해 주세요. 재현 가능한 버그는 GitHub Issues 버그 신고 템플릿으로, 기능 제안은 기능 제안 템플릿으로 등록해 주세요. 토큰·비밀번호·전체 로그는 올리지 마세요.",
   },
   {
     id: "contact-privacy",

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
+import { DISCORD_INVITE_URL, QA_URL } from "@/lib/site";
+
 export default function HomePage() {
   return (
     <>
@@ -45,6 +47,22 @@ export default function HomePage() {
               </Link>
             </div>
           </article>
+        </section>
+
+        <section className="card" style={{ marginTop: "1rem" }}>
+          <h2>Autumn Tools Discord</h2>
+          <p>
+            모든 제품의 질문, 업데이트 소식, 기능 제안을 한곳에서 나눕니다.
+            토큰·비밀번호는 올리지 마세요.
+          </p>
+          <a
+            href={DISCORD_INVITE_URL || QA_URL}
+            className="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Discord 참여
+          </a>
         </section>
       </main>
     </>

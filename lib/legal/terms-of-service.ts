@@ -12,7 +12,7 @@ export const TERMS_SECTIONS: LegalSection[] = [
       "서비스는 현재 베타(Beta) 단계로 제공되며, 기능·UI·안내 범위가 예고 없이 변경될 수 있습니다.",
       "운영자: 개인 개발자 AutumnColor77",
       `시행일: ${TERMS_EFFECTIVE_DATE}`,
-      `일반 문의·커뮤니티: 문의 허브(${QA_URL}) 및 Discord(해당 페이지 안내)`,
+      `일반 문의·커뮤니티: 문의 허브(${QA_URL}) 및 Autumn Tools Discord(해당 페이지 안내)`,
       `버그·개인정보·공식 신고: GitHub Issues (${GITHUB_ISSUES_URL})`,
     ],
   },

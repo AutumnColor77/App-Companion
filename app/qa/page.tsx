@@ -10,7 +10,7 @@ import {
 
 export const metadata = {
   title: "문의하기",
-  description: "Live MR Manager 설치·사용 문의 — Discord, FAQ, GitHub Issues",
+  description: "Live MR Manager 설치·사용 문의 — Autumn Tools Discord, FAQ, GitHub Issues",
 };
 
 export default function QaPage() {
@@ -25,17 +25,18 @@ export default function QaPage() {
           <span className="badge">문의</span>
           <h1>도움이 필요하신가요?</h1>
           <p>
-            설치·사용법은 FAQ와 Discord에서 안내합니다. 재현 가능한 버그는
+            설치·사용법은 FAQ와 Autumn Tools Discord에서 안내합니다. 재현 가능한 버그는
             GitHub Issues로 등록해 주세요.
           </p>
         </section>
 
         <section className="card-grid support-hub">
           <article className="card support-card-primary">
-            <h2>Discord</h2>
+            <h2>Autumn Tools Discord</h2>
             <p>
-              스트리머·퍼포머 커뮤니티에서 빠르게 질문하고 답변을 받을 수
-              있습니다. 토큰·비밀번호는 올리지 마세요.
+              Autumn Tools 전 제품의 커뮤니티입니다. Live MR Manager 채널에서
+              빠르게 질문하고 답변을 받을 수 있습니다. 토큰·비밀번호는 올리지
+              마세요.
             </p>
             <a
               href={discordUrl}

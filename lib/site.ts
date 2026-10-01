@@ -13,7 +13,7 @@ export const COMPANION_BASE =
 export const FAQ_URL = `${COMPANION_BASE}/faq`;
 export const QA_URL = `${COMPANION_BASE}/qa`;
 
-/** Discord 초대 링크 — [LMRM] Live MR Manager */
+/** Discord 초대 링크 — Autumn Tools 커뮤니티(전 제품 공용) */
 export const DISCORD_INVITE_URL =
   process.env.NEXT_PUBLIC_DISCORD_INVITE_URL?.trim() ||
   "https://discord.gg/qfJnk3VJyf";

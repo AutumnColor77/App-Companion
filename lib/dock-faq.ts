@@ -61,7 +61,7 @@ export const DOCK_FAQ_ITEMS: FaqItem[] = [
     category: "문의",
     question: "문의는 어디로 하나요?",
     answer:
-      "GitHub Issues로 남겨 주세요. 토큰, 세션 쿠키, Client Secret, 전체 로그는 올리지 마세요.",
+      "사용법 질문은 Autumn Tools Discord(https://discord.gg/qfJnk3VJyf)의 Cheese Stick Dock 채널에, 재현 가능한 버그는 GitHub Issues에 남겨 주세요. 토큰, 세션 쿠키, Client Secret, 전체 로그는 올리지 마세요.",
   },
 ];
 
