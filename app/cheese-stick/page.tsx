@@ -1,24 +1,34 @@
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
+import { ProductIcon } from "@/components/ProductIcon";
 import { SiteHeader } from "@/components/SiteHeader";
+import { dockJsonLd, pageMetadata } from "@/lib/seo";
 import { DOCK_APP_URL } from "@/lib/site";
 
-export const metadata = {
-  title: "Cheese Stick Dock",
+export const metadata = pageMetadata({
+  title: "Cheese Stick Dock (치즈스틱 독) — 치지직 OBS 통계 독",
   description:
-    "치지직 방송 통계·설정 독 Cheese Stick Dock 안내. OBS 사용자 브라우저 독으로 추가해 사용합니다.",
-};
+    "치즈스틱 독(Cheese Stick Dock)은 치지직 시청자 수·팔로워 통계를 보고 방송 제목·카테고리·태그를 바꾸는 무료 OBS 사용자 브라우저 독입니다.",
+  path: "/cheese-stick",
+  product: "dock",
+});
 
 export default function CheeseStickPage() {
   return (
     <>
+      <JsonLd data={dockJsonLd(`${DOCK_APP_URL}/`)} />
       <SiteHeader currentPath="/cheese-stick" />
       <main>
         <section className="hero">
           <span className="badge">치지직 방송 독</span>
-          <h1>Cheese Stick Dock</h1>
+          <h1 className="title-with-icon">
+            <ProductIcon product="dock" size={44} />
+            Cheese Stick Dock
+          </h1>
           <p>
-            동시 시청자, 최고·평균 시청자, 팔로워를 보고 방송 제목·카테고리·태그를
-            바꿉니다. OBS 사용자 브라우저 독으로 추가해 사용합니다.
+            Cheese Stick Dock(치즈스틱 독)은 치지직 방송의 동시 시청자, 최고·평균
+            시청자, 팔로워를 보고 방송 제목·카테고리·태그를 바꿉니다. OBS 사용자
+            브라우저 독으로 추가해 사용합니다.
           </p>
         </section>
 

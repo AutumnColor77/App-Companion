@@ -14,7 +14,7 @@ export const DOCK_TERMS_SECTIONS: LegalSection[] = [
     id: "intro",
     title: "1. 총칙",
     paragraphs: [
-      `본 이용약관(이하 「약관」)은 Cheese Stick Dock 웹 앱(${DOCK_APP_URL})과 안내 페이지(lmrm.vercel.app/cheese-stick)의 이용 조건을 정합니다. 소스 코드의 소프트웨어 라이선스는 [MIT License](${DOCK_LICENSE_URL})가 적용됩니다.`,
+      `본 이용약관(이하 「약관」)은 Cheese Stick Dock 웹 앱(${DOCK_APP_URL})과 안내 페이지(autumntools.vercel.app/cheese-stick)의 이용 조건을 정합니다. 소스 코드의 소프트웨어 라이선스는 [MIT License](${DOCK_LICENSE_URL})가 적용됩니다.`,
       "기능과 화면은 운영상 필요에 따라 바뀔 수 있습니다.",
       "운영자: 개인 개발자 AutumnColor77",
       `시행일: ${DOCK_TERMS_EFFECTIVE_DATE}`,

@@ -3,7 +3,7 @@ export const PRIVACY_EFFECTIVE_DATE = "2026년 10월 1일";
 export const GITHUB_ISSUES_URL =
   "https://github.com/AutumnColor77/Live-MR-Manager/issues";
 
-export const QA_URL = "https://lmrm.vercel.app/qa";
+export const QA_URL = "https://autumntools.vercel.app/qa";
 
 export type LegalTable = {
   headers: string[];
@@ -24,7 +24,7 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
     id: "intro",
     title: "1. 총칙",
     paragraphs: [
-      "Live MR Manager(이하 「서비스」)는 Windows 데스크톱 앱, 신청 노래책 웹 서비스 Live MR Songbook(www.livemrsongbook.com, 이하 「Songbook」), 제품 안내 웹사이트 어텀 툴즈(Autumn Tools, lmrm.vercel.app, 이하 「Autumn Tools 웹」)로 이루어집니다.",
+      "Live MR Manager(이하 「서비스」)는 Windows 데스크톱 앱, 신청 노래책 웹 서비스 Live MR Songbook(www.livemrsongbook.com, 이하 「Songbook」), 제품 안내 웹사이트 어텀 툴즈(Autumn Tools, autumntools.vercel.app, 이하 「Autumn Tools 웹」)로 이루어집니다.",
       "본 개인정보 처리방침은 서비스 이용 과정에서 처리되는 정보의 범위, 목적, 보유 기간 등을 설명합니다.",
       "개인정보 처리자: 개인 개발자 AutumnColor77",
       `시행일: ${PRIVACY_EFFECTIVE_DATE}`,

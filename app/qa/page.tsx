@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { ProductIcon } from "@/components/ProductIcon";
 import { SiteHeader } from "@/components/SiteHeader";
+import { pageMetadata } from "@/lib/seo";
 import {
   DISCORD_INVITE_URL,
   FAQ_URL,
@@ -8,10 +10,13 @@ import {
   QA_URL,
 } from "@/lib/site";
 
-export const metadata = {
-  title: "문의하기",
-  description: "Live MR Manager 설치·사용 문의 — Autumn Tools Discord, FAQ, GitHub Issues",
-};
+export const metadata = pageMetadata({
+  title: "Live MR Manager 문의하기",
+  description:
+    "라이브 MR 매니저(Live MR Manager) 설치·사용 문의 — Autumn Tools Discord, FAQ, GitHub Issues.",
+  path: "/qa",
+  product: "lmrm",
+});
 
 export default function QaPage() {
   const discordUrl = DISCORD_INVITE_URL || QA_URL;
@@ -23,7 +28,10 @@ export default function QaPage() {
       <main>
         <section className="hero">
           <span className="badge">문의</span>
-          <h1>도움이 필요하신가요?</h1>
+          <h1 className="title-with-icon">
+            <ProductIcon product="lmrm" size={44} />
+            도움이 필요하신가요?
+          </h1>
           <p>
             설치·사용법은 FAQ와 Autumn Tools Discord에서 안내합니다. 재현 가능한 버그는
             GitHub Issues로 등록해 주세요.

@@ -8,7 +8,7 @@ export const SITE_LOGO = "/images/logo.png";
 export const SITE_ICON = "/images/app-icon.png";
 
 export const COMPANION_BASE =
-  process.env.NEXT_PUBLIC_COMPANION_BASE?.trim() || "https://lmrm.vercel.app";
+  process.env.NEXT_PUBLIC_COMPANION_BASE?.trim() || "https://autumntools.vercel.app";
 
 export const FAQ_URL = `${COMPANION_BASE}/faq`;
 export const QA_URL = `${COMPANION_BASE}/qa`;

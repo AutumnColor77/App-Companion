@@ -1,10 +1,14 @@
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
+import { ProductIcon } from "@/components/ProductIcon";
 import { SiteHeader } from "@/components/SiteHeader";
+import { WEBSITE_JSON_LD } from "@/lib/seo";
 import { DISCORD_INVITE_URL, QA_URL } from "@/lib/site";
 
 export default function HomePage() {
   return (
     <>
+      <JsonLd data={WEBSITE_JSON_LD} />
       <SiteHeader currentPath="/" />
       <main>
         <section className="hero">
@@ -18,10 +22,13 @@ export default function HomePage() {
 
         <section className="card-grid">
           <article className="card">
-            <h2>Live MR Manager</h2>
+            <h2 className="title-with-icon">
+              <ProductIcon product="lmrm" />
+              Live MR Manager
+            </h2>
             <p>
-              Windows에서 MR·가사·재생을 관리하는 데스크톱 앱입니다. Live MR
-              Songbook으로 시청자 신청을 받습니다.
+              라이브 MR 매니저는 Windows에서 MR·가사·재생을 관리하는 데스크톱
+              앱입니다. Live MR Songbook으로 시청자 신청을 받습니다.
             </p>
             <div className="card-actions">
               <Link href="/download" className="btn btn-primary">
@@ -33,10 +40,13 @@ export default function HomePage() {
             </div>
           </article>
           <article className="card">
-            <h2>Cheese Stick Dock</h2>
+            <h2 className="title-with-icon">
+              <ProductIcon product="dock" />
+              Cheese Stick Dock
+            </h2>
             <p>
-              치지직 방송의 시청자 수와 제목·카테고리·태그를 보는 독입니다.
-              OBS 사용자 브라우저 독으로 추가해 사용합니다.
+              치즈스틱 독은 치지직 방송의 시청자 수와 제목·카테고리·태그를 보는
+              독입니다. OBS 사용자 브라우저 독으로 추가해 사용합니다.
             </p>
             <div className="card-actions">
               <Link href="/cheese-stick/guide" className="btn btn-primary">

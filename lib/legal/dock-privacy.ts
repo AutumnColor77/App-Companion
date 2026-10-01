@@ -8,7 +8,7 @@ export const DOCK_PRIVACY_SECTIONS: LegalSection[] = [
     id: "intro",
     title: "1. 총칙",
     paragraphs: [
-      `Cheese Stick Dock(이하 「서비스」)는 치지직 방송 통계와 방송 설정 변경을 제공하는 웹 앱(${DOCK_APP_URL})과, 그 안내 페이지(lmrm.vercel.app/cheese-stick)로 이루어집니다.`,
+      `Cheese Stick Dock(이하 「서비스」)는 치지직 방송 통계와 방송 설정 변경을 제공하는 웹 앱(${DOCK_APP_URL})과, 그 안내 페이지(autumntools.vercel.app/cheese-stick)로 이루어집니다.`,
       "본 개인정보 처리방침은 서비스 이용 과정에서 처리되는 정보의 범위, 목적, 보유 기간을 설명합니다.",
       "개인정보 처리자: 개인 개발자 AutumnColor77",
       `시행일: ${DOCK_PRIVACY_EFFECTIVE_DATE}`,

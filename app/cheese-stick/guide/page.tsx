@@ -1,14 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ProductIcon } from "@/components/ProductIcon";
 import { SiteHeader } from "@/components/SiteHeader";
+import { pageMetadata } from "@/lib/seo";
 import { CopyUrlButton } from "@/components/CopyUrlButton";
 import { DOCK_APP_URL } from "@/lib/site";
 
-export const metadata = {
-  title: "Cheese Stick Dock 사용 방법",
+export const metadata = pageMetadata({
+  title: "치즈스틱 독 사용 방법 — OBS에 치지직 독 추가하기",
   description:
-    "OBS 사용자 브라우저 독에 Cheese Stick Dock을 추가하고 치지직 계정을 연동해 사용하는 방법",
-};
+    "OBS 사용자 브라우저 독에 치즈스틱 독(Cheese Stick Dock)을 추가하고 치지직 계정을 연동해 시청자 통계와 방송 설정을 사용하는 방법.",
+  path: "/cheese-stick/guide",
+  product: "dock",
+});
 
 const IMG = "/images/cheese-stick-guide";
 
@@ -19,7 +23,10 @@ export default function CheeseStickGuidePage() {
       <main>
         <section className="hero">
           <span className="badge">사용 방법</span>
-          <h1>OBS에 독 추가하기</h1>
+          <h1 className="title-with-icon">
+            <ProductIcon product="dock" size={44} />
+            OBS에 독 추가하기
+          </h1>
           <p>
             Cheese Stick Dock은 OBS의 사용자 브라우저 독으로 넣어 사용합니다. 독을
             추가한 뒤 치지직 계정을 연동하면 방송 정보와 통계를 볼 수 있습니다.

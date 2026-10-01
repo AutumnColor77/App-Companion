@@ -1,23 +1,33 @@
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
+import { ProductIcon } from "@/components/ProductIcon";
 import { SiteHeader } from "@/components/SiteHeader";
+import { lmrmJsonLd, pageMetadata } from "@/lib/seo";
 import { GITHUB_RELEASES_URL, SONGBOOK_URL } from "@/lib/site";
 
-export const metadata = {
-  title: "다운로드",
-  description: "Live MR Manager Windows 앱 다운로드와 Live MR Songbook 연동 안내",
-};
+export const metadata = pageMetadata({
+  title: "Live MR Manager 다운로드 (라이브 MR 매니저)",
+  description:
+    "라이브 MR 매니저(Live MR Manager) Windows 무료 다운로드. AI MR 분리·보컬 제거, 가사 표시, 키 변경, OBS 오버레이, Live MR Songbook 신청곡 연동을 지원하는 방송·연습용 MR 관리 프로그램입니다.",
+  path: "/download",
+  product: "lmrm",
+});
 
 export default function DownloadPage() {
   return (
     <>
+      <JsonLd data={lmrmJsonLd(GITHUB_RELEASES_URL)} />
       <SiteHeader currentPath="/download" />
       <main>
         <section className="hero">
           <span className="badge">Windows</span>
-          <h1>Live MR Manager 받기</h1>
+          <h1 className="title-with-icon">
+            <ProductIcon product="lmrm" size={44} />
+            Live MR Manager 받기
+          </h1>
           <p>
-            PC에 설치한 뒤 MR 라이브러리를 만들고, 방송·연습에 맞게 곡을
-            관리할 수 있습니다.
+            Live MR Manager(라이브 MR 매니저)를 PC에 설치한 뒤 MR 라이브러리를
+            만들고, 방송·연습에 맞게 곡을 관리할 수 있습니다.
           </p>
         </section>
         <section className="card-grid">
@@ -67,7 +77,10 @@ export default function DownloadPage() {
               </span>
             </li>
             <li>
-              <strong>3. Songbook 연결</strong>
+              <strong className="title-with-icon">
+                <ProductIcon product="songbook" size={22} />
+                3. Songbook 연결
+              </strong>
               <span>
                 앱에서 Google 또는 네이버로 로그인하고,{" "}
                 <a href={`${SONGBOOK_URL}/me`} target="_blank" rel="noopener noreferrer">

@@ -8,7 +8,7 @@ export const TERMS_SECTIONS: LegalSection[] = [
     id: "intro",
     title: "1. 총칙",
     paragraphs: [
-      "본 이용약관(이하 「약관」)은 Live MR Manager(이하 「서비스」)의 제품 안내 웹사이트 어텀 툴즈(Autumn Tools, lmrm.vercel.app, 이하 「Autumn Tools 웹」)와 신청 노래책 웹 서비스 Live MR Songbook(www.livemrsongbook.com, 이하 「Songbook」)의 이용 조건을 정합니다. 데스크톱 애플리케이션의 소스 코드·빌드 산출물에 대한 소프트웨어 라이선스는 별도로 MIT License가 적용됩니다.",
+      "본 이용약관(이하 「약관」)은 Live MR Manager(이하 「서비스」)의 제품 안내 웹사이트 어텀 툴즈(Autumn Tools, autumntools.vercel.app, 이하 「Autumn Tools 웹」)와 신청 노래책 웹 서비스 Live MR Songbook(www.livemrsongbook.com, 이하 「Songbook」)의 이용 조건을 정합니다. 데스크톱 애플리케이션의 소스 코드·빌드 산출물에 대한 소프트웨어 라이선스는 별도로 MIT License가 적용됩니다.",
       "서비스는 현재 베타(Beta) 단계로 제공되며, 기능·UI·안내 범위가 예고 없이 변경될 수 있습니다.",
       "운영자: 개인 개발자 AutumnColor77",
       `시행일: ${TERMS_EFFECTIVE_DATE}`,

@@ -1,6 +1,6 @@
 # Autumn Tools (어텀 툴즈)
 
-AutumnColor77 제품군의 통합 브랜드 Autumn Tools 안내 사이트입니다. Live MR Manager와 Cheese Stick Dock의 사용자 안내 사이트입니다. Next.js로 동작하며 프로덕션 주소는 `https://lmrm.vercel.app` 입니다.
+AutumnColor77 제품군의 통합 브랜드 Autumn Tools 안내 사이트입니다. Live MR Manager와 Cheese Stick Dock의 사용자 안내 사이트입니다. Next.js로 동작하며 프로덕션 주소는 `https://autumntools.vercel.app` 입니다.
 
 ## 페이지
 
@@ -43,7 +43,7 @@ Autumn Tools 전 제품이 함께 쓰는 Discord 초대 링크입니다. 홈, �
 ## Vercel
 
 1. 이 저장소 루트를 import 합니다. Root Directory는 비웁니다.
-2. 도메인 `lmrm.vercel.app` 을 이 프로젝트에 연결합니다.
-3. `NEXT_PUBLIC_DISCORD_INVITE_URL` 을 Production 환경 변수로 넣습니다.
+2. 도메인 `autumntools.vercel.app` 을 대표 도메인으로 연결하고, 예전 주소 `lmrm.vercel.app` 은 `autumntools.vercel.app` 으로 리다이렉트합니다.
+3. `NEXT_PUBLIC_DISCORD_INVITE_URL` 을 Production 환경 변수로 넣습니다. 검색엔진 소유 확인 코드는 `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`, `NEXT_PUBLIC_NAVER_SITE_VERIFICATION` 에 넣습니다.
 
-도메인을 빼면 Live MR Manager 앱과 Live MR Songbook의 약관·도움말 링크가 끊깁니다.
+`lmrm.vercel.app` 리다이렉트를 빼면 이전 버전 Live MR Manager 앱의 약관·도움말 링크가 끊깁니다.
