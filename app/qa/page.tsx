@@ -35,8 +35,7 @@ export default function QaPage() {
             <h2>Autumn Tools Discord</h2>
             <p>
               Autumn Tools 전 제품의 커뮤니티입니다. Live MR Manager 채널에서
-              빠르게 질문하고 답변을 받을 수 있습니다. 토큰·비밀번호는 올리지
-              마세요.
+              빠르게 질문하고 답변을 받을 수 있습니다.
             </p>
             <a
               href={discordUrl}

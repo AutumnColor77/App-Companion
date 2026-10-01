@@ -53,7 +53,6 @@ export default function HomePage() {
           <h2>Autumn Tools Discord</h2>
           <p>
             모든 제품의 질문, 업데이트 소식, 기능 제안을 한곳에서 나눕니다.
-            토큰·비밀번호는 올리지 마세요.
           </p>
           <a
             href={DISCORD_INVITE_URL || QA_URL}
