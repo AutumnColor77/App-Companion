@@ -1,6 +1,6 @@
-# Companion
+# Autumn Tools (어텀 툴즈)
 
-Live MR Manager와 Cheese Stick Dock의 사용자 안내 사이트입니다. Next.js로 동작하며 프로덕션 주소는 `https://lmrm.vercel.app` 입니다.
+AutumnColor77 제품군의 통합 브랜드 Autumn Tools 안내 사이트입니다. Live MR Manager와 Cheese Stick Dock의 사용자 안내 사이트입니다. Next.js로 동작하며 프로덕션 주소는 `https://lmrm.vercel.app` 입니다.
 
 ## 페이지
 
@@ -8,7 +8,9 @@ Live MR Manager와 Cheese Stick Dock의 사용자 안내 사이트입니다. Nex
 |------|------|
 | `/` | 두 제품 허브 |
 | `/faq`, `/qa`, `/download`, `/privacy`, `/terms` | Live MR Manager. 데스크톱 앱이 이 주소를 그대로 엽니다 |
+| `/privacy`, `/terms` | Live MR Songbook(https://www.livemrsongbook.com)에도 적용됩니다. Songbook 웹이 이 주소로 링크합니다 |
 | `/cheese-stick` | Cheese Stick Dock 소개. 본체는 https://cheese-stick-dock.pages.dev |
+| `/cheese-stick/guide` | 독을 OBS에 추가하는 방법 |
 | `/cheese-stick/faq` | 독 FAQ |
 | `/cheese-stick/privacy`, `/cheese-stick/terms` | 독 개인정보 처리방침·이용약관 |
 
@@ -44,4 +46,4 @@ NEXT_PUBLIC_DISCORD_INVITE_URL=https://discord.gg/qfJnk3VJyf
 2. 도메인 `lmrm.vercel.app` 을 이 프로젝트에 연결합니다.
 3. `NEXT_PUBLIC_DISCORD_INVITE_URL` 을 Production 환경 변수로 넣습니다.
 
-도메인을 빼면 Live MR Manager 앱의 약관·도움말 링크가 끊깁니다.
+도메인을 빼면 Live MR Manager 앱과 Live MR Songbook의 약관·도움말 링크가 끊깁니다.

@@ -7,6 +7,7 @@ import {
   DOCK_GITHUB_ISSUES_URL,
   DOCK_LICENSE_URL,
   QA_URL,
+  SONGBOOK_URL,
 } from "@/lib/site";
 
 const LMRM_LICENSE_URL =
@@ -33,6 +34,8 @@ export function SiteFooter() {
           MIT · 이 안내의 약관은 서비스 이용에 적용됩니다.
         </p>
         <p>
+          <Link href="/cheese-stick/guide">사용 방법</Link>
+          {" · "}
           <Link href="/cheese-stick/faq">도움말</Link>
           {" · "}
           <a href={DOCK_GITHUB_ISSUES_URL} target="_blank" rel="noopener noreferrer">
@@ -55,8 +58,8 @@ export function SiteFooter() {
     return (
       <footer className="site-footer">
         <p>
-          Companion은 Live MR Manager와 Cheese Stick Dock의 설치·사용 안내와
-          법적 문서를 모은 사이트입니다.
+          어텀 툴즈(Autumn Tools)는 Live MR Manager와 Cheese Stick Dock의
+          설치·사용 안내와 법적 문서를 모은 사이트입니다.
         </p>
         <p>
           <Link href="/download">Live MR Manager</Link>
@@ -77,7 +80,8 @@ export function SiteFooter() {
     <footer className="site-footer">
       <p>
         Live MR Manager — 방송·연습용 MR 관리 앱. 음원은 내 PC에서만 처리됩니다.
-        앱 소스는 MIT · 본 사이트의 약관은 온라인 안내·브랜드에 적용됩니다.
+        앱 소스는 MIT · 본 사이트의 약관은 Autumn Tools 웹·Live MR Songbook·브랜드에
+        적용됩니다.
       </p>
       <p>
         <Link href="/faq">도움말</Link>
@@ -89,6 +93,10 @@ export function SiteFooter() {
         </a>
         {" · "}
         <Link href="/download">다운로드</Link>
+        {" · "}
+        <a href={SONGBOOK_URL} target="_blank" rel="noopener noreferrer">
+          Live MR Songbook
+        </a>
         {" · "}
         <Link href="/privacy">개인정보 처리방침</Link>
         {" · "}

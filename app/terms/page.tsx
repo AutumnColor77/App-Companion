@@ -8,7 +8,7 @@ import {
 export const metadata = {
   title: "이용약관",
   description:
-    "Live MR Manager 및 Companion 웹 이용약관 — MIT와 서비스 약관 관계, 저작권·면책",
+    "Live MR Manager, Live MR Songbook, Autumn Tools 웹 이용약관 — MIT와 서비스 약관 관계, Songbook 이용 수칙, 저작권·면책",
 };
 
 export default function TermsPage() {
@@ -20,8 +20,8 @@ export default function TermsPage() {
           <span className="badge">법적 고지</span>
           <h1>이용약관</h1>
           <p>
-            Live MR Manager 데스크톱 앱과 Companion 웹(lmrm.vercel.app) 이용
-            조건을 안내합니다. 시행일: {TERMS_EFFECTIVE_DATE}
+            Live MR Manager 데스크톱 앱, Live MR Songbook(livemrsongbook.com),
+            Autumn Tools 웹(lmrm.vercel.app) 이용 조건을 안내합니다. 시행일: {TERMS_EFFECTIVE_DATE}
           </p>
         </section>
         <LegalDocument sections={TERMS_SECTIONS} />

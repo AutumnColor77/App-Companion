@@ -21,6 +21,8 @@ export const DISCORD_INVITE_URL =
 export const GITHUB_ISSUES_BUG_URL = `${GITHUB_ISSUES_URL}/new?template=bug_report.yml`;
 export const GITHUB_ISSUES_FEATURE_URL = `${GITHUB_ISSUES_URL}/new?template=feature_request.yml`;
 
+export const SONGBOOK_URL = "https://www.livemrsongbook.com";
+
 export const DOCK_APP_URL = "https://cheese-stick-dock.pages.dev";
 export const DOCK_GITHUB_REPO = "AutumnColor77/Chzzk_statistics_Dock";
 export const DOCK_GITHUB_URL = `https://github.com/${DOCK_GITHUB_REPO}`;

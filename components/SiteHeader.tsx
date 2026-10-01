@@ -13,6 +13,7 @@ const LMRM_LINKS = [
 
 const DOCK_LINKS = [
   { href: "/cheese-stick", label: "소개" },
+  { href: "/cheese-stick/guide", label: "사용 방법" },
   { href: "/cheese-stick/faq", label: "도움말" },
 ];
 
@@ -35,7 +36,7 @@ export function SiteHeader({ currentPath = "/" }: Props) {
   return (
     <header className="site-header">
       <Link href="/" className="brand">
-        Companion
+        Autumn Tools
       </Link>
       <div className="header-right">
         <nav className="nav" aria-label="제품">

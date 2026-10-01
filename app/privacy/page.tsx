@@ -8,7 +8,7 @@ import {
 export const metadata = {
   title: "개인정보 처리방침",
   description:
-    "Live MR Manager 및 Companion 웹의 개인정보 처리 항목, 제3자 연동, 쿠키 안내",
+    "Live MR Manager 앱, Live MR Songbook, Autumn Tools 웹의 개인정보 처리 항목, 보유 기간, 제3자 연동, 쿠키 안내",
 };
 
 export default function PrivacyPage() {
@@ -20,8 +20,9 @@ export default function PrivacyPage() {
           <span className="badge">법적 고지</span>
           <h1>개인정보 처리방침</h1>
           <p>
-            Live MR Manager 데스크톱 앱과 Companion 웹(lmrm.vercel.app)에서
-            처리하는 정보의 범위와 목적을 안내합니다. 시행일:{" "}
+            Live MR Manager 데스크톱 앱, Live MR Songbook(livemrsongbook.com),
+            Autumn Tools 웹(lmrm.vercel.app)에서 처리하는 정보의 범위와 목적을
+            안내합니다. 시행일:{" "}
             {PRIVACY_EFFECTIVE_DATE}
           </p>
         </section>

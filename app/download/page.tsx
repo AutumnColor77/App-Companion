@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
-import { GITHUB_RELEASES_URL } from "@/lib/site";
+import { GITHUB_RELEASES_URL, SONGBOOK_URL } from "@/lib/site";
 
 export const metadata = {
   title: "다운로드",
-  description: "Live MR Manager Windows 앱 다운로드",
+  description: "Live MR Manager Windows 앱 다운로드와 Live MR Songbook 연동 안내",
 };
 
 export default function DownloadPage() {
@@ -20,32 +20,34 @@ export default function DownloadPage() {
             관리할 수 있습니다.
           </p>
         </section>
-        <article className="card">
-          <h2>최신 버전 설치</h2>
-          <p>
-            아래 버튼에서 설치 파일을 받을 수 있습니다. 설치 후 유튜브 검색·URL
-            또는 로컬 음원을 추가하고, Live MR Songbook으로 채널 노래책을
-            동기화해 보세요.
-          </p>
-          <a
-            href={GITHUB_RELEASES_URL}
-            className="btn btn-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            설치 파일 다운로드
-          </a>
-        </article>
-        <article className="card" style={{ marginTop: "1rem" }}>
-          <h2>설치 후</h2>
-          <p>
-            곡을 추가하고 AI MR 분리, 가사 동기화, OBS 오버레이, Songbook
-            신청목록 등 앱 기능을 활용할 수 있습니다.
-          </p>
-          <Link href="/faq" className="btn btn-secondary">
-            사용 방법 보기
-          </Link>
-        </article>
+        <section className="card-grid">
+          <article className="card">
+            <h2>최신 버전 설치</h2>
+            <p>
+              GitHub Releases에서 설치 파일(setup.exe)을 받아 실행합니다. 새
+              버전이 나오면 앱이 알려 줍니다.
+            </p>
+            <a
+              href={GITHUB_RELEASES_URL}
+              className="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              설치 파일 다운로드
+            </a>
+          </article>
+          <article className="card">
+            <h2>시스템 요구사항</h2>
+            <p>
+              Windows 10/11 64비트. Visual C++ 재배포 패키지는 설치 중 자동으로
+              설치됩니다. 그래픽카드는 선택 사항이며, NVIDIA + CUDA 환경이면 AI
+              MR 분리가 훨씬 빨라집니다.
+            </p>
+            <Link href="/faq" className="btn btn-secondary">
+              도움말 보기
+            </Link>
+          </article>
+        </section>
         <section style={{ marginTop: "2.5rem" }}>
           <h2 style={{ margin: "0 0 1rem", fontSize: "1.15rem" }}>
             이렇게 사용해 보세요
@@ -53,25 +55,33 @@ export default function DownloadPage() {
           <ol className="steps">
             <li>
               <strong>1. 앱 설치</strong>
-              <span>이 페이지에서 최신 버전을 설치합니다.</span>
+              <span>
+                설치 후 설정 → 모델 다운로드에서 MR 분리 모델을 받아 둡니다.
+              </span>
             </li>
             <li>
               <strong>2. 곡 라이브러리 만들기</strong>
               <span>
-                유튜브 검색·URL 또는 로컬 파일로 곡을 추가하고, 필요하면 AI로
-                MR을 분리해 둡니다. Songbook에 로그인하면 채널 노래책으로 보낼
-                수 있습니다.
+                유튜브 검색·URL 또는 로컬 파일로 곡을 추가하고, 제목·가수·KEY/BPM·
+                가사를 정리합니다. 필요하면 AI로 MR을 분리해 둡니다.
               </span>
             </li>
             <li>
-              <strong>3. 곡 정보 정리</strong>
+              <strong>3. Songbook 연결</strong>
               <span>
-                제목·가수·KEY/BPM·가사 등을 정리해 방송·연습에 맞게 관리합니다.
+                앱에서 Google 또는 네이버로 로그인하고,{" "}
+                <a href={`${SONGBOOK_URL}/me`} target="_blank" rel="noopener noreferrer">
+                  Live MR Songbook
+                </a>
+                에서 채널을 만든 뒤 곡 목록을 보냅니다. 시청자는 노래책에서 곡을
+                신청할 수 있습니다.
               </span>
             </li>
             <li>
               <strong>4. 방송·연습</strong>
-              <span>앱에서 재생·피치 조절·OBS 오버레이를 사용합니다.</span>
+              <span>
+                재생·피치 조절, OBS 오버레이, 신청목록 대기열을 함께 사용합니다.
+              </span>
             </li>
           </ol>
         </section>

@@ -5,7 +5,7 @@ import { DOCK_APP_URL } from "@/lib/site";
 export const metadata = {
   title: "Cheese Stick Dock",
   description:
-    "치지직 방송 통계·설정 독 Cheese Stick Dock 안내. 설치 없이 브라우저에서 엽니다.",
+    "치지직 방송 통계·설정 독 Cheese Stick Dock 안내. OBS 사용자 브라우저 독으로 추가해 사용합니다.",
 };
 
 export default function CheeseStickPage() {
@@ -18,22 +18,17 @@ export default function CheeseStickPage() {
           <h1>Cheese Stick Dock</h1>
           <p>
             동시 시청자, 최고·평균 시청자, 팔로워를 보고 방송 제목·카테고리·태그를
-            바꿉니다. 설치 없이 브라우저에서 엽니다.
+            바꿉니다. OBS 사용자 브라우저 독으로 추가해 사용합니다.
           </p>
         </section>
 
         <section className="card-grid">
           <article className="card">
-            <h2>독 열기</h2>
-            <p>치지직 로그인 후 같은 탭에서 대시보드로 돌아옵니다.</p>
-            <a
-              href={DOCK_APP_URL}
-              className="btn btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              서비스 열기
-            </a>
+            <h2>OBS에 추가하기</h2>
+            <p>OBS 사용자 브라우저 독으로 넣어 사용합니다.</p>
+            <Link href="/cheese-stick/guide" className="btn btn-primary">
+              사용 방법
+            </Link>
           </article>
           <article className="card">
             <h2>사용 전에</h2>
@@ -50,12 +45,11 @@ export default function CheeseStickPage() {
           </h2>
           <ol className="steps">
             <li>
-              <strong>1. 독 열기</strong>
+              <strong>1. OBS에 독 추가</strong>
               <span>
-                <a href={DOCK_APP_URL} target="_blank" rel="noopener noreferrer">
-                  cheese-stick-dock.pages.dev
-                </a>
-                를 엽니다.
+                OBS 상단 메뉴 독 → 사용자 브라우저 독에 {DOCK_APP_URL}/ 주소를
+                추가합니다. 자세한 순서는{" "}
+                <Link href="/cheese-stick/guide">사용 방법</Link>을 참고하세요.
               </span>
             </li>
             <li>

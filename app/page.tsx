@@ -1,18 +1,16 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
-import { DOCK_APP_URL } from "@/lib/site";
-
 export default function HomePage() {
   return (
     <>
       <SiteHeader currentPath="/" />
       <main>
         <section className="hero">
-          <span className="badge">안내 사이트</span>
+          <span className="badge">Autumn Tools</span>
           <h1>쓰는 제품의 안내를 여기서 확인하세요</h1>
           <p>
-            Live MR Manager와 Cheese Stick Dock의 사용 방법, 자주 묻는 질문,
-            개인정보 처리방침과 이용약관을 모아 두었습니다.
+            어텀 툴즈(Autumn Tools)의 Live MR Manager와 Cheese Stick Dock 사용
+            방법, 자주 묻는 질문, 개인정보 처리방침과 이용약관을 모아 두었습니다.
           </p>
         </section>
 
@@ -20,8 +18,8 @@ export default function HomePage() {
           <article className="card">
             <h2>Live MR Manager</h2>
             <p>
-              Windows에서 MR·가사·재생을 관리하는 데스크톱 앱입니다. 음원은 내
-              PC에서만 다룹니다.
+              Windows에서 MR·가사·재생을 관리하는 데스크톱 앱입니다. Live MR
+              Songbook으로 시청자 신청을 받습니다.
             </p>
             <div className="card-actions">
               <Link href="/download" className="btn btn-primary">
@@ -36,17 +34,12 @@ export default function HomePage() {
             <h2>Cheese Stick Dock</h2>
             <p>
               치지직 방송의 시청자 수와 제목·카테고리·태그를 보는 독입니다.
-              설치 없이 브라우저에서 엽니다.
+              OBS 사용자 브라우저 독으로 추가해 사용합니다.
             </p>
             <div className="card-actions">
-              <a
-                href={DOCK_APP_URL}
-                className="btn btn-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                서비스 열기
-              </a>
+              <Link href="/cheese-stick/guide" className="btn btn-primary">
+                사용 방법
+              </Link>
               <Link href="/cheese-stick" className="btn btn-secondary">
                 안내
               </Link>
